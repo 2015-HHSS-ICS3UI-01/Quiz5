@@ -34,7 +34,7 @@ public class Quiz5 {
             }
 
             //translate from american to canadian if the word ends with "or" and has 4 or more letters
-            if ((word.endsWith("or")) && (word.length() >= 4) && (word.endsWith("bor")
+            if ((word.endsWith("or")) && (word.length() > 4) && (word.endsWith("bor")
                     || word.endsWith("cor")
                     || word.endsWith("dor")
                     || word.endsWith("for")
