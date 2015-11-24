@@ -18,12 +18,12 @@ public class Quiz5 {
         //new scanner
         Scanner input = new Scanner(System.in);
 
-
+       //while true
         while(true){
 
         //ask user to enter word to traslate 
         System.out.println("Please enter a word in American  to traslate into Canadian");
-
+       //allow user to enter word 
         String word = input.nextLine();
         //check the lenght of the word 
         int length = word.length();
