@@ -31,7 +31,7 @@ public class Quiz5 {
         int length = word.length();
 
         //if the word has more than 4 cghracters
-           if (length >4 && length <=64){
+           if (length >4){
                
         //if the user wishes to quit       
                     if (word.equals("quit!")){
