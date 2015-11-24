@@ -21,19 +21,29 @@ public class Quiz5 {
         System.out.println(" Please enter a word ");
         String American = input.nextLine();
         
-        
+        if (American.length() >=4){
+        if (American.length()<=64){ 
         if (American.endsWith("or")){
             American = American.replace("or", "our");
             System.out.println("In Canadian: " + American);
-        }
-    else{ 
+        }else{ 
             if (!American.endsWith("or")){
                 American = American;
                 System.out.println("In Canadian: " + American);
-        
-    }
+            }     
+        }
+            }
+        else{
+            System.out.println("In Canadian Already");
+        }
+        }else
+            System.out.println("In Canadian Already");
+        }
+            }
             
-    }
-}
-}
+            
+    
+    
+
+
     
