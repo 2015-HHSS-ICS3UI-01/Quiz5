@@ -24,9 +24,10 @@ public class quiz5 {
         while (!word.equals("quit!")) {
             System.out.println("Enter an American word to translate into canadian");
             word = in.nextLine();
-            
+         
+        //find length of word
         int length = word.length();
-        
+       //check if there is a vowel before "or"  
        String noend = word.replace("or", "");
                
             if (word.endsWith("or") && (length > 4) && 
@@ -36,9 +37,11 @@ public class quiz5 {
                !noend.endsWith("o")||
                !noend.endsWith("u")||
                !noend.endsWith("y"))){
-              
+                
+              //replave or with our if necessary
               String canadian = word.replace("or", "our");
               
+              //output translated word
                 System.out.println(word + " translates to " + canadian + " in canadian");
             }else{
                 System.out.println(word + " translates to " + word + " in canadian");
