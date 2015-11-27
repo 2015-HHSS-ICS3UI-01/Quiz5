@@ -41,17 +41,12 @@ public class Quiz5 {
                 System.out.println(word + " in Canadian is the same!");
             }
             //adds our at the end of the word
-            for (int i = 0; i < american.length(); i++) {
-                char r = american.charAt(i);
-                if (american.endsWith("or")) {
-                    if (r == 'r') {
-                        int rFound = american.indexOf(r);
-                        String first = american.substring(0, rFound);
-                        String middle = american.substring(rFound);
-                        american = first + "ur";
+            for (int i = 0; i < american.length(); i++) {               
+                //replaces or with our
+                if (american.contains("or")) {                
+                        american = american.replaceAll("or", "our");
                         System.out.println(word + " translates to " + american + " in Canadian");
-                        break;
-                    }
+                        break;                  
                 }
             }
         }
